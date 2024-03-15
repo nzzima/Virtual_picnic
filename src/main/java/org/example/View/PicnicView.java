@@ -7,14 +7,17 @@ import java.util.*;
 public class PicnicView {
     public void PrintPicnic(Picnic picnic) {
         List<String> unique = RemoveRepeatedElems(picnic.getFruits());
+        System.out.println("=================================================================");
         System.out.println("========================== P I C N I C ==========================");
-        System.out.println("Каждый гость мог принести с собой все что угодно.");
-        System.out.println("На нашем пикнике большое разнообразие продуктов и вещевых позиций:");
+        System.out.println("=================================================================");
+        System.out.println("=========================CHARACTERISTICS=========================");
+        System.out.println("=================================================================");
+        System.out.println("Типы продуктов на пикнике: ");
         for (String fruit : unique) {
             System.out.println(fruit);
         }
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        System.out.println("Причем некоторые из них даже повторяются:\n");
+        System.out.println("Количество продуктов на пикнике:\n");
         for (String key : picnic.getCount_fruits().keySet()) {
             String value = picnic.getCount_fruits().get(key).toString();
             System.out.println(key + " --> " + value + " шт.");

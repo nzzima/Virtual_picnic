@@ -11,11 +11,11 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Controller {
-    private DataReadInputFileService dataReadInputFileService;
-    private DataCountFruitsService dataCountFruitsService;
-    private DataLongestWordService dataLongestWordService;
-    private DataFrequencyOccurrenceFruitsService dataFrequencyOccurrenceFruitsService;
-    private PicnicView picnicView;
+    private final DataReadInputFileService dataReadInputFileService;
+    private final DataCountFruitsService dataCountFruitsService;
+    private final DataLongestWordService dataLongestWordService;
+    private final DataFrequencyOccurrenceFruitsService dataFrequencyOccurrenceFruitsService;
+    private final PicnicView picnicView;
 
     public void start() {
         List<String> fruits = dataReadInputFileService.readInput();
