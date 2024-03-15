@@ -26,7 +26,7 @@ public class PicnicView {
         System.out.println("Наиболее популярные позиции:\n");
         for (String key : picnic.getCount_fruits().keySet()) {
             String value = picnic.getCount_fruits().get(key).toString();
-            if(picnic.getCount_fruits().get(key) >= 99) {
+            if(picnic.getCount_fruits().get(key) >= 100) {
                 System.out.println(key + " --> " + value + " шт.");
             }
         }
